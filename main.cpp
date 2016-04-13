@@ -25,20 +25,63 @@ int main() {
     Node* tailA = NULL;
     Node* tailB = NULL;
 
+    //TC1
+    //List1 - 1 2 5 6 7 8 9
+    //List2 - 11 12 8 9
+    insertNodeOneList(1, tailA, headA);
+    insertNodeOneList(2, tailA, headA);
     insertNodeOneList(5, tailA, headA);
     insertNodeOneList(6, tailA, headA);
     insertNodeOneList(7, tailA, headA);
 
-    insertNodeOneList(10, tailB, headB);
     insertNodeOneList(11, tailB, headB);
     insertNodeOneList(12, tailB, headB);
 
-    insertNodeBothLists(20, tailA, headA, tailB, headB);
-    insertNodeBothLists(30, tailA, headA, tailB, headB);
+    insertNodeBothLists(8, tailA, headA, tailB, headB);
+    insertNodeBothLists(9, tailA, headA, tailB, headB);
 
-
-    cout<<tailA<<headA<<"\n";
-    cout<<tailB<<headB<<"\n";
+//    //TC2
+//    //List1 - 11 12 8 9
+//    //List2 - 1 2 5 6 7 8 9
+//    insertNodeOneList(1, tailB, headB);
+//    insertNodeOneList(2, tailB, headB);
+//    insertNodeOneList(5, tailB, headB);
+//    insertNodeOneList(6, tailB, headB);
+//    insertNodeOneList(7, tailB, headB);
+//
+//    insertNodeOneList(11, tailA, headA);
+//    insertNodeOneList(12, tailA, headA);
+//
+//    insertNodeBothLists(8, tailA, headA, tailB, headB);
+//    insertNodeBothLists(9, tailA, headA, tailB, headB);
+//
+//
+//    //Test Case#3 - First Element overlaps with last element
+//    //List1 - 6 7 8 9 10 11
+//    //List2 - 11
+//    insertNodeOneList(6, tailA, headA);
+//    insertNodeOneList(7, tailA, headA);
+//    insertNodeOneList(8, tailA, headA);
+//    insertNodeOneList(9, tailA, headA);
+//    insertNodeOneList(10, tailA, headA);
+//
+//    insertNodeBothLists(11, tailA, headA, tailB, headB);
+//
+//    //Test Case#4
+//    //List1 - 11
+//    //List2 - 6 7 8 9 10 11
+//    insertNodeOneList(6, tailB, headB);
+//    insertNodeOneList(7, tailB, headB);
+//    insertNodeOneList(8, tailB, headB);
+//    insertNodeOneList(9, tailB, headB);
+//    insertNodeOneList(10, tailB, headB);
+//
+//    insertNodeBothLists(11, tailA, headA, tailB, headB);
+//
+//    //Test Case#5
+//    //List1 : 11
+//    //List2 : 11
+//    insertNodeBothLists(11, tailA, headA, tailB, headB);
 
     cout << "List 1 "<< endl;
     printList(headA);
